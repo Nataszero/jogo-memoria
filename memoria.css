@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, #f7d794, #c44569);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.book-container {
+    width: 80vw;
+    height: 90vh;
+    background-color: #fff5e1;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    background: #fdf7f1;
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 100%;
+    max-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.story-text {
+    font-size: 1.6em;
+    color: #3e3e3e;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.choices-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.choices-container button {
+    background-color: #c44569;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.choices-container button:hover {
+    background-color: #b33939;
+}
+
+.choices-container button:disabled {
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #333;
+}

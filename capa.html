@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa do Livro</title>
+    <link rel="stylesheet" href="capa.css">
+</head>
+<body>
+    <div class="cover-container">
+        <div class="book-cover">
+            <h1 class="book-title">O Pequeno Príncipe</h1>
+            <h2 class="book-subtitle">Uma Aventura pelos Planetas</h2>
+            <div class="author">
+                <p>Baseado na obra de Antoine de Saint-Exupéry</p>
+                <p>Adaptado por [Seu Nome]</p>
+            </div>
+            <button id="enter-story" class="enter-button">Entrar na História</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("enter-story").addEventListener("click", function() {
+            window.location.href = "memoria.html"; // Caminho para a página da história
+        });
+    </script>
+</body>
+</html>
